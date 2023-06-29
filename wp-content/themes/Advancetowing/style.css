@@ -1,0 +1,492 @@
+@charset "UTF-8";
+
+/*
+Theme Name: Advancetowing
+Theme URI: https://wordpress.org/themes/twentytwentyone/
+Author: the WordPress team
+Author URI: https://wordpress.org/
+Description: Twenty Twenty-One is a blank canvas for your ideas and it makes the block editor your best brush. With new block patterns, which allow you to create a beautiful layout in a matter of seconds, this theme’s soft colors and eye-catching — yet timeless — design will let your work shine. Take it for a spin! See how Twenty Twenty-One elevates your portfolio, business website, or personal blog.
+Requires at least: 5.3
+Tested up to: 6.2
+Requires PHP: 5.6
+Version: 1.8
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: twentytwentyone
+Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready
+
+Twenty Twenty-One WordPress Theme, (C) 2020 WordPress.org
+Twenty Twenty-One is distributed under the terms of the GNU GPL.
+*/
+
+/**
+* SETTINGS
+* File-header..........The file header for the themes style.css file.
+* Fonts................Any font files, if the project needs specific fonts.
+* Global...............Project-specific, globally available variables.
+*
+* TOOLS
+* Functions............Global functions.
+* Mixins...............Global mixins.
+*
+* GENERIC
+* Normalize.css........Normalise browser defaults.
+* Breakpoints..........Mixins and variables for responsive styles
+* Vertical-margins.....Vertical spacing for the main components.
+* Reset................Reset specific elements to make them easier to style in other contexts.
+* Clearings............Clearings for the main components.
+*
+* ELEMENTS
+* Blockquote...........Default blockquote.
+* Forms................Element-level form styling.
+* Headings.............H1–H6
+* Links................Default links.
+* Lists................Default lists.
+* Media................Images, Figure, Figcaption, Embed, iFrame, Objects, Video.
+*
+* BLOCKS
+* Audio................Specific styles for the audio block.
+* Button...............Specific styles for the button block.
+* Code.................Specific styles for the code block.
+* Columns..............Specific styles for the columns block.
+* Cover................Specific styles for the cover block.
+* File.................Specific styles for the file block.
+* Gallery..............Specific styles for the gallery block.
+* Group................Specific styles for the group block.
+* Heading..............Specific styles for the heading block.
+* Image................Specific styles for the image block.
+* Latest comments......Specific styles for the latest comments block.
+* Latest posts.........Specific styles for the latest posts block.
+* Legacy...............Specific styles for the legacy gallery.
+* List.................Specific styles for the list block.
+* Media text...........Specific styles for the media and text block.
+* Navigation...........Specific styles for the navigation block.
+* Paragraph............Specific styles for the paragraph block.
+* Pullquote............Specific styles for the pullquote block.
+* Quote................Specific styles for the quote block.
+* Search...............Specific styles for the search block.
+* Separator............Specific styles for the separator block.
+* Table................Specific styles for the table block.
+* Verse................Specific styles for the verse block.
+* Video................Specific styles for the video block.
+* Utilities............Block alignments.
+*
+* COMPONENTS
+* Header...............Header styles.
+* Footer...............Footer styles.
+* Comments.............Comment styles.
+* Archives.............Archive styles.
+* 404..................404 styles.
+* Search...............Search styles.
+* Navigation...........Navigation styles.
+* Footer Navigation....Footer Navigation styles.
+* Pagination...........Pagination styles.
+* Single...............Single page and post styles.
+* Posts and pages......Misc, sticky post styles.
+* Entry................Entry, author biography.
+* Widget...............Widget styles.
+* Editor...............Editor styles.
+*
+* UTILITIES
+* A11y.................Screen reader text, prefers reduced motion etc.
+* Color Palette........Classes for the color palette colors.
+* Editor Font Sizes....Editor Font Sizes.
+* Measure..............The width of a line of text, in characters.
+*/
+
+/* Categories 01 to 03 are the basics. */
+
+body{font-family:'Golos Text',sans-serif;font-size:14px;font-weight:400;line-height:26px;color:#4A4A4A}
+.top-bar{background-color:#D12727;color:#fff;display:flex;justify-content:space-between;min-height:40px;padding:0 0 0 15px}
+.can-flag{background-color:#fff;color:#d12727;min-width:60px;display:flex;align-items:center;justify-content:center;font-size:30px}
+.top-bar-inner ul{list-style-type:none;padding:0;margin:0;display:flex;align-items:center;height:100%}
+.top-bar-inner ul li,.top-bar-inner ul li a{font-weight:600;text-transform:uppercase;font-size:13px;color:#fff;text-decoration:none;display:flex;align-items:center}
+.top-bar-inner ul li:not(.top-bar-inner ul li:last-child){padding:0 40px 0 0}
+.top-bar-inner ul li i{font-size:20px;padding:0 6px 0 0}
+.mobile-logo{display:none}
+.navbar-expand-lg .navbar-collapse{justify-content:center}
+.navbar.bg-light{background-color:#0E376A!important;padding:0;height:80px}
+.navbar-nav .nav-link, .menu-item a{color:#fff!important;font-weight:600;text-transform:uppercase;font-size:16px;transition:all .3s ease-in-out;padding:0!important; text-decoration: none;}
+.navbar-nav .nav-link:hover, .menu-item a:hover{color:#d12727!important}
+.desktop-logo img{height:70px}
+.navbar-nav{justify-content:center;align-items:center}
+.desktop-logo{background-color:#fff;border-bottom-left-radius:50px;border-bottom-right-radius:50px;padding:15px!important;min-width:190px;display:flex;align-items:center;justify-content:center;box-shadow:0 0 10px 0 rgb(0 0 0 / 15%);position:relative;top:10px;margin:0 60px;z-index:1}
+.navbar-nav .nav-item, .menu-item{padding:0 20px}
+.grey-back{background-color:#f2f2f2}
+.caption{text-transform:uppercase;font-size:10px;font-weight:600;letter-spacing:1.5px;color:#D12727;line-height:normal;padding:0 0 5px;display:block}
+.sap-xlg-heading{font-size:67px;font-weight:800;color:#144E97;line-height:75px;padding:0 0 24px}
+.sap-lg-heading{font-size:47px;font-weight:800;color:#144E97;line-height:55px}
+.sap-md-heading{font-size:32px;font-weight:800;color:#144E97;line-height:38px}
+.sap-sm-heading{font-size:23px;font-weight:800;color:#144E97;line-height:28px}
+.text-para,.text-para p{font-size:14px;font-weight:400;line-height:26px}
+.sap-btn-dark button,.sap-btn-dark a,.sap-btn-light button,.sap-btn-light a, .sap-btn-dark .wpcf7-submit{box-shadow:0 0!important;outline:0!important;border-width:2px;border-style:solid;padding:9px 22px;line-height:normal;display:inline-flex;align-items:center;justify-content:center;min-width:120px;min-height:45px;border-radius:50px;text-transform:uppercase;font-weight:600;font-size:13px;transition:all .3s ease-in-out; text-decoration: none;}
+.sap-btn-dark button,.sap-btn-dark a, .sap-btn-dark .wpcf7-submit{background-color:#D12727;border-color:#D12727;color:#fff}
+.sap-btn-dark button:hover,.sap-btn-dark a:hover, .sap-btn-dark .wpcf7-submit:hover{background-color:#b31e1e;border-color:#b31e1e;color:#fff}
+.sap-btn-light button,.sap-btn-light a{background-color:#fff;border-color:#fff;color:#144E97}
+.sap-btn-light button:hover,.sap-btn-light a:hover{background-color:#D12727;border-color:#D12727;color:#fff}
+.hero-back{min-width:450px;width:100%;max-width:450px;height:450px;overflow:hidden;border-radius:50px}
+.hero-back img{height:100%;width:100%;object-fit:cover;filter:blur(2px)}
+.hero-sec-inner{display:flex;justify-content:space-between;align-items:center;height:100%}
+.hero-sec-inner .right-sec{position:relative}
+.hero-sec-inner .right-sec .hero-truck{position:absolute;bottom:-15px;right:-80px}
+.hero-back:after{content:"";height:75%;width:350px;display:block;position:absolute;left:450px;bottom:0;background-color:#f2f2f2;z-index:1}
+.hero-sec{overflow:hidden;height:calc(100vh - 120px);padding:0}
+.hero-sec-inner .text-para{width:100%;max-width:400px;padding:0 0 24px}
+#float-circ1{position:absolute;left:0;transform:translateX(-50%);bottom:20px}
+#float-circ2{position:absolute;right:0;transform:translateX(50%);top:40px}
+.scroll-down{position:absolute;bottom:0;left:50%;transform:translateX(-50%);padding:30px 20px;font-size:20px;color:#144E97}
+section{position:relative;padding:80px 0}
+.rd-assist-inner{background-color:#F2F2F2;border-radius:20px;width:100%;flex-basis:100%;max-width:calc(50% - 20px);margin:10px;padding:20px}
+.rd-assist-head{display:flex;flex-wrap:wrap}
+.rda-icon i{color:#C4C4C4;font-size:40px}
+.rd-assist-inner .sap-sm-heading{padding:15px 0}
+.rd-assist-sec-inner{display:flex;flex-wrap:wrap}
+.rd-assist-sec-inner .left-sec{width:100%;flex-basis:100%;max-width:50%;padding:0 50px 0 0}
+.rd-assist-sec-inner .right-sec{width:100%;flex-basis:100%;max-width:50%}
+.rd-assist-sec-inner .left-sec .sap-lg-heading{padding:0 0 24px}
+.rd-assist-sec-inner .left-sec .text-para{padding:0 0 8px}
+#float-circ3{position:absolute;right:0;bottom:40px;transform:translateX(50%)}
+.tow-service-loc:before{content:"";background-image:url(http://dev1.kindlebit.com/Development/advancetowing/wp-content/uploads/2023/04/tow-service.png);position:absolute;width:100%;height:100%;top:0;left:0;z-index:0;filter:grayscale(1) blur(3px);transform:scale(1.01);background-size:cover;background-position:center;background-repeat:no-repeat}
+.tow-service-loc-inner{position:relative;z-index:2}
+.tow-service-loc{overflow:hidden;color:#fff}
+.tow-service-loc:after{content:"";position:absolute;top:0;left:0;width:100%;height:100%;background-color:rgb(14 55 106 / 70%)}
+.tow-service-loc .caption,.tow-service-loc .sap-lg-heading,.tow-service-loc .sap-sm-heading{color:#fff}
+.tsli-head{display:flex;flex-wrap:wrap}
+.tsli-head .left-sec{width:100%;flex-basis:100%;max-width:65%;border-right:1px solid #fff;margin:25px 0 8px;padding:0 40px 0 0}
+.tsli-head .right-sec{width:100%;flex-basis:100%;max-width:35%;margin:24px 0 0;padding:0 0 0 40px}
+.tsli-head .right-sec ul{list-style-type:none;padding:0;margin:0;display:flex;flex-direction:column;text-align:center}
+.tsli-head .left-sec .text-para{color:#fff}
+.tsli-head .right-sec ul li{padding:0 0 20px;display:block;width:auto;margin-left:auto;margin-right:0}
+.tsli-head .right-sec ul li:nth-child(even){margin-left:0;margin-right:auto}
+.about-us-sec-inner{display:flex}
+.about-logo{position:relative;overflow:hidden;min-width:350px;height:440px;border-radius:20px;display:flex;align-items:center;justify-content:center}
+.about-logo:after{content:"";position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(135deg,rgb(209 39 39 / 70%),rgb(20 78 151 / 70%))}
+.about-logo:before{content:"";background-image:url(http://dev1.kindlebit.com/Development/advancetowing/wp-content/uploads/2023/04/about-us-img.png);position:absolute;width:100%;height:100%;top:0;left:0;z-index:0;filter:grayscale(1) blur(3px);transform:scale(1.01);background-size:cover;background-position:center;background-repeat:no-repeat}
+.about-logo img{position:relative;z-index:1}
+.about-us-sec-inner .left-sec{padding:0 20px 0 0}
+.text-para b,.text-para p b{font-weight:600}
+#float-circ4{position:absolute;left:0;transform:translateX(-50%);bottom:40px}
+.au-counter li{background-color:#F2F2F2;border-radius:20px;margin:7px;padding:20px}
+.au-count-heading{font-weight:600;color:#C4C4C4;text-transform:uppercase; line-height: normal;}
+.au-counter{display:flex;flex-wrap:wrap;padding:0;margin:0;list-style-type:none}
+.au-right-sec-inner a{background-color:#F2F2F2;border-radius:20px;margin:7px;padding:20px;display:inline-flex;flex-direction:column;align-items:center;justify-content:center;text-decoration:none}
+.au-head{display:flex;flex-wrap:wrap;justify-content:space-between}
+.au-head .au-left-sec{width:100%;flex-basis:100%;max-width:67%;border-right:1px solid rgb(74 74 74 / 15%);padding:0 20px 0 0}
+.au-head .au-right-sec{width:100%;flex-basis:100%;max-width:33%}
+.au-right-sec-inner{display:flex;justify-content:center;align-items:center;height:100%}
+.blue-back{background-color:#0E376A;color:#fff}
+.info-ban-sec .sap-sm-heading,.info-ban-sec .sap-lg-heading{color:#fff}
+.text-red{color:#d12727}
+.ibsi-head{list-style-type:none;display:flex;justify-content:space-between;padding:0 0 30px;margin:0 0 30px;border-bottom:1px solid #fff;flex-wrap:wrap}
+.ibsi-icon i{font-size:40px;padding:0 0 15px}
+.ibsi-head li{padding:0 15px 0 0;width:100%;flex-basis:100%;max-width:20%}
+.discount-head{display:flex;align-items:center;justify-content:space-between}
+#float-circ5{position:absolute;top:40px;right:0;transform:translateX(50%)}
+.our-partners-sec-inner .sap-lg-heading{padding:0 0 24px}
+.partner-slider{padding:60px 0 0}
+.partner-img img{height:70px!important;width:120px!important;object-fit:contain;margin:0 auto;filter:grayscale(1);opacity:.4;transition:all .3s ease-in-out}
+.partner-img:hover img{filter:grayscale(0);opacity:1}
+.rd-assist-sec,.about-us-sec,.our-partners-sec,.contact-us-sec{overflow:hidden}
+.partner-slider .owl-nav{display:block!important;margin:0}
+.partner-slider .owl-nav button{background-color:transparent!important;border:0!important;outline:0;margin:0!important}
+.partner-slider .owl-nav span{font-size:0}
+.partner-slider .owl-prev span:before{content:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13.436' height='23.987' viewBox='0 0 13.436 23.987'%3E%3Cline id='Line_39' data-name='Line 39' x1='0.001' y2='14.921' transform='translate(1.414 12.022) rotate(-45)' fill='none' stroke='%23c9c9c9' stroke-linecap='square' stroke-width='2'/%3E%3Cline id='Line_40' data-name='Line 40' x2='0.001' y2='14.921' transform='translate(12.021 1.414) rotate(45)' fill='none' stroke='%23c9c9c9' stroke-linecap='square' stroke-width='2'/%3E%3C/svg%3E%0A")}
+.partner-slider .owl-next span:after{content:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13.436' height='23.987' viewBox='0 0 13.436 23.987'%3E%3Cline id='Line_39' data-name='Line 39' y1='14.922' transform='translate(1.47 22.572) rotate(-135)' fill='none' stroke='%23c9c9c9' stroke-linecap='square' stroke-width='2'/%3E%3Cline id='Line_40' data-name='Line 40' y1='14.922' transform='translate(11.966 11.966) rotate(135)' fill='none' stroke='%23c9c9c9' stroke-linecap='square' stroke-width='2'/%3E%3C/svg%3E%0A")}
+.partner-slider .owl-nav .owl-prev{left:0;position:absolute;top:60%;transform:translateY(-50%)}
+.partner-slider .owl-nav .owl-next{right:0;position:absolute;top:60%;transform:translateY(-50%)}
+.our-partners-sec-inner{border-bottom:1px solid rgb(74 74 74 / 15%);padding-bottom:60px}
+.our-partners-sec{padding-bottom:0}
+.creek-pop-up{background-color:transparent;box-shadow:0 0;border:0;padding:0;font-weight:600;color:#144E97; text-align: left; line-height: normal;}
+#float-circ6{position:absolute;top:0;left:0;transform:translateX(-50%)}
+#float-circ7{position:absolute;right:0;bottom:40px;transform:translateX(50%)}
+.con-us-top{display:flex;flex-wrap:wrap}
+.con-us-top-left{width:100%;flex-basis:100%;max-width:calc(100% - 660px);padding:0 20px 0 0}
+.con-us-info-head ul li a{text-decoration:none}
+.con-us-info-head ul{padding:0;list-style-type:none;margin:0;display:flex;flex-wrap:wrap}
+.con-us-info-head ul li{width:100%;flex-basis:100%;max-width:50%}
+.con-us-info-head{padding:0 0 30px}
+.con-us-info-head ul li a svg{margin:0 0 8px}
+.contact-map{padding:40px 0 0;height:340px;width:100%}
+.contact-map iframe{width:100%;height:100%;border-radius:20px;filter:grayscale(1);outline:0!important}
+footer{background-color:#0E376A;color:#fff;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:60px 0 0}
+.foot-bot{width:100%;background-color:#D12727;min-height:40px;display:flex;align-items:center;justify-content:center;margin:60px 0 0;font-size:12px;text-transform:uppercase}
+.foot-logo img{height:70px;width:auto}
+.footer-menu ul li a{color:#fff!important;font-weight:600;text-transform:uppercase;font-size:16px;transition:all .3s ease-in-out;text-decoration:none;padding:0 20px!important}
+.footer-menu ul li a:hover{color:#d12727!important}
+.footer-menu ul{list-style-type:none;padding:0;margin:0;display:flex;flex-wrap:wrap}
+.footer-menu{padding:30px 0}
+.foot-info{width:100%;max-width:480px;padding:30px 12px;border-top:1px solid #fff;font-weight:600}
+.foot-payment-logo img{height:40px;width:auto}
+
+.menu-item-has-children a:after{content:"\f0dd";font-weight:900;font-family:'Font Awesome 5 Free';font-size:10px;position:relative;margin:0 0 0 6px;top:-4px}
+.menu-item-has-children .sub-menu a:after{display:none}
+.sub-menu{position:absolute;background-color:#f2f2f2;z-index:2;margin:0;list-style-type:none;padding:10px;min-width:490px;border-radius:10px;box-shadow:0 3px 10px 0 rgb(0 0 0 / 50%);border:1px solid rgb(14 55 106 / 50%)}
+.menu-item-has-children{position:relative}
+.menu-item .sub-menu a{text-transform:initial;color:#0e376a!important;width: 100%;display: block;padding: 2px 0 !important;}
+.sub-menu .menu-item{padding:0}
+.menu-item .sub-menu a:hover{color:#d12727!important}
+
+
+.inner-banner{padding:0;overflow:hidden}
+.inner-banner-img img{filter:grayscale(1) blur(2px);transform:scale(1.01);object-position:center;height:100%;width:100%;object-fit:cover}
+.inner-banner-img{position:relative;overflow:hidden;height:450px}
+.inner-banner-img:after{content:"";position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(135deg,rgb(209 39 39 / 70%),rgb(20 78 151 / 70%))}
+.inner-banner-inner{position:relative}
+.inner-banner-con{position:absolute;top:0;left:0;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:0 15px}
+.inner-banner-con .sap-xlg-heading,.inner-banner-con .text-para{color:#fff}
+.inner-banner-con .text-para{width:100%;max-width:700px;text-align:center;padding:0 0 24px}
+.serv-list-head{display:flex;flex-direction:column}
+.serv-list-inner{background-color:#F2F2F2;padding:40px;border-radius:20px;display:flex}
+.serv-img img{object-fit:cover;border-radius:20px;min-width:450px;height:300px;max-width:450px;width:100%}
+.serv-con{padding:0 0 0 20px}
+.serv-con .sap-md-heading{padding:0 0 15px}
+.serv-list-inner:not(.serv-list-inner:last-child){margin:0 0 40px}
+.serv-list-inner:nth-child(even){flex-direction:row-reverse}
+.serv-list-inner:nth-child(even) .serv-con{padding:0 20px 0 0}
+.serv-img img:not(.serv-img img:last-child){margin:0 0 24px}
+.serv-con .text-para ul{padding:0;list-style-type:none}
+.serv-con .text-para ul li:before{content:"-";margin:0 8px 0 0}
+.con-us-top-right{ width: 10%;flex-basis: 100%;max-width: 660px;}
+.contact-form .form-group .form-control::placeholder{color:#c4c4c4; font-size: 14px; font-weight: regular;}
+textarea.form-control {height: 110px;width: 100%;}
+.contact-form .form-group .form-control:focus{  box-shadow: none;}
+.form-control {padding: 8px 18px !important; font-size: 14px !important; color: #c4c4c4 !important; border: 2px solid #c4c4c4 !important; border-radius: 28px !important; }
+select.form-control {-webkit-appearance: listbox;}
+.con-us-info-head ul li {width: 100%; flex-basis: 100%; max-width: 50%; padding: 0 12px 0 0px;}
+.con-us-info-head ul li:last-child {margin: 0 0 0 12px;width: 100%;flex-basis: 100%;max-width: calc(50% - 12px);}
+#shadow-host-companion {padding: 0 !important;}
+.footer-menu ul li{padding: 0;}
+.mobile-logo{background-color:#fff;border-bottom-left-radius:50px;border-bottom-right-radius:50px;padding:15px!important;min-width:190px;align-items:center;justify-content:center;box-shadow:0 0 10px 0 rgb(0 0 0 / 15%);position:relative;top: 0px;margin: 0 auto !important;z-index:1}
+.mobile-logo img{height:70px;width:auto}
+.form-control{min-height:45px}
+.au-right-sec-inner .au-count-heading {text-align: center;}
+.wpcf7-not-valid-tip {text-transform: uppercase;font-size: 12px;font-weight: 500;letter-spacing: .5px;padding: 3px 0 0;}
+.wpcf7-response-output {display: none;}
+.contact-form .sap-btn-dark p {margin: 0;}
+textarea.form-control {resize: none;}
+#get-quote-pop .modal-dialog{max-width:760px}
+#get-quote-pop .modal-body{padding:40px;background-color:#fff;border-radius:20px}
+#get-quote-pop .modal-body .sap-lg-heading{padding:0 0 24px}
+.modal-content{border-radius:20px !important;background:transparent !important; border: 0 !important;}
+.modal-header{background-color:transparent !important;border:0 !important;margin:0 0 20px !important}
+.modal-header .btn-close{background-image:none !important;opacity:1 !important;padding:0 !important}
+.modal-header .btn-close:before{content:"\f00d";font-family:'Font Awesome 6 Free';font-weight:900;color:#fff;font-size:27px}
+.text-para a {color: #0e376a !important;font-weight: 500;font-style: italic;}
+.con-us-info-head a {color: #144E97 !important;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1199px) {
+.sap-xlg-heading{font-size:47px;line-height:52px}
+.sap-lg-heading{font-size:32px;line-height:37px}
+.sap-md-heading{font-size:23px;line-height:28px}
+.sap-sm-heading{font-size:18px;line-height:23px}
+.tow-service-loc-inner .sap-lg-heading{font-size:32px}
+.au-counter li .sap-sm-heading{font-size:23px;line-height:28px}
+.au-counter li, .au-right-sec-inner a {padding: 15px;}
+.au-right-sec-inner svg {height: 30px;width: auto;margin: 0 0 8px;}
+
+    
+
+}
+
+
+@media(max-width:991px) {
+.desktop-logo{display:none;}
+.mobile-logo{display:flex;}
+.navbar.bg-light{height:auto}
+.navbar-expand-lg .menu-item{padding:6px 0;width: 100%;text-align: center;}
+.navbar-toggler-icon{background:none !important;display: flex;align-items: center;justify-content: center;}
+.navbar-toggler-icon:before{content:"\f0c9";font-family:'Font Awesome 6 Free';color:#fff;font-weight:900}
+.navbar-toggler{position:absolute;top: 33px;right: 15px;box-shadow:0 0!important;outline:0!important;padding: 0 !important;border: 0 !important;}
+.menu-main-menu-container{padding:15px 0 0}
+.menu-main-menu-right-container{padding:0 0 15px}
+.sub-menu{position:relative;text-align:center;background:transparent;box-shadow:0 0;min-width:auto;border-top:1px solid #fff;border-bottom:1px solid #fff;border-radius:0;margin:15px 0 0}
+.menu-item .sub-menu a{color:#fff!important}
+.top-bar-inner ul li{padding:0 15px 0 0!important}
+
+
+}
+
+
+
+@media(max-width:767px) {
+
+.hero-sec{height:auto;padding:80px 0}
+.hero-sec-inner{flex-direction:column-reverse;height:auto}
+.hero-back{min-width:230px;max-width:230px;height:250px;border-radius:20px}
+.hero-sec-inner .right-sec .hero-truck img{height:145px}
+.hero-back:after{left:230px}
+#float-circ2{z-index:2}
+.left-sec{padding:40px 0 0}
+.hero-sec-inner .right-sec .hero-truck{right:-40px;bottom:-5px}
+.rd-assist-sec-inner{flex-direction:column}
+.rd-assist-sec-inner .left-sec{max-width:100%;padding:0}
+.rd-assist-sec-inner .right-sec{max-width:100%}
+.rd-assist-head{margin:24px 0 0}
+.rd-assist-inner{position:relative}
+.serv-img img {min-width: auto;height: 240px;max-width: 100%;}
+.serv-list-inner {flex-direction: column !important;padding: 20px;}
+.serv-con {padding: 24px 0 0 !important;}
+
+
+
+
+    
+}
+
+
+@media(max-width:499px) {
+.rd-assist-inner{max-width: calc(100% - 0px);margin: 0 0 15px;}
+.tsli-head{flex-direction:column}
+.tsli-head .right-sec{padding:0;max-width:320px;margin-left:auto;margin-right:auto}
+.tsli-head .left-sec{max-width:100%}
+.tsli-head .left-sec{padding:0 0 24px;border:0;border-bottom:1px solid #fff;margin-bottom:0}
+.about-logo{min-width:auto}
+.about-us-sec-inner{flex-direction:column}
+.about-us-sec-inner .right-sec{padding:24px 0 0}
+.au-head{flex-direction:column}
+.au-head .au-left-sec{max-width:100%;border:0;border-bottom:1px solid rgb(74 74 74 / 15%);margin:0 0 24px;padding:0 0 24px}
+.au-head .au-right-sec{max-width:100%;position:relative}
+.ibsi-head{flex-direction:column}
+.ibsi-head li{max-width:100%;padding:0 0 40px;display:flex;flex-direction:column;align-items:center}
+.ibsi-head li:last-child{padding-bottom:0}
+.discount-head{flex-direction:column;align-items:flex-start}
+.discount-head .sap-btn-dark{margin:24px 0 0}
+.contact-us-sec-inner{flex-direction:column}
+.con-us-top{width:100%;flex-basis:100%}
+.con-us-top-left{max-width:100%}
+.con-us-info-head ul li{max-width:100%;margin:0!important;padding:24px 0 0}
+.con-us-info-head ul{justify-content:center;text-align:center}
+#shadow-host-companion{padding:0!important}
+.footer-menu ul{flex-direction:column}
+.footer-menu ul li:not(.footer-menu ul li:last-child){padding:0 0 20px}
+.can-flag{font-size: 22px;min-width: 50px;}
+.top-bar-inner ul li i{font-size: 16px;}
+
+
+}
+
+
+
+@media(min-width:500px) and (max-width:767px) {
+.hero-back{min-width:400px;max-width:400px;height:350px;border-radius:20px}
+.hero-sec-inner .right-sec .hero-truck img{height:255px}
+.hero-back:after{left:400px}
+.hero-sec-inner .right-sec .hero-truck{right:-60px;bottom:-10px}
+.about-logo{min-width:250px;height:350px;max-width:250px}
+.about-logo img{height:80px}
+.about-us-sec-inner{flex-direction:column}
+.about-us-sec-inner .right-sec{padding:24px 0 0}
+.about-us-sec-inner .left-sec{padding:0}
+.au-head .au-counter{position:relative}
+.discount-head{flex-direction:column;align-items:flex-start}
+.discount-head .sap-btn-dark{margin:24px 0 0}
+.contact-us-sec-inner{flex-direction:column}
+.con-us-top{width:100%;flex-basis:100%}
+.con-us-top-left{max-width:100%}
+.con-us-info-head ul{padding:24px 0 0}
+.tsli-head .right-sec ul li{margin: 0 auto !important;}
+.au-head .au-right-sec {padding: 0 0 0px 20px;}
+#HeavyDutyTowing .serv-img {display: flex;flex-wrap: wrap;margin: 0 -7px;}
+#HeavyDutyTowing .serv-img img {width: 100%;flex-basis: 100%;max-width: calc(50% - 14px);margin: 7px;height: 160px;}
+    
+
+
+
+}
+
+
+
+
+@media(min-width:768px) and (max-width:1199px)
+{
+.hero-back{min-width: 320px;max-width: 320px;height: 320px;border-radius:20px}
+.hero-sec-inner .right-sec .hero-truck img{height: 225px;}
+.hero-back:after{left: 320px;}
+.hero-sec-inner .right-sec .hero-truck{right: -100px;bottom: -10px;}
+.hero-sec-inner .left-sec{padding: 0 40px 0 0px;}
+.rd-assist-sec-inner .left-sec{padding: 0 15px 0 0;}
+.au-head .au-right-sec {padding: 0 0 0px 20px;}
+
+    
+
+}
+
+
+@media(min-width:768px) and (max-width:991px)
+{
+.rd-assist-sec-inner{flex-direction:column}
+.rd-assist-sec-inner .left-sec{max-width:100%;padding:0}
+.rd-assist-sec-inner .right-sec{max-width:100%}
+.rd-assist-head{margin:24px 0 0}
+.rd-assist-inner{position:relative}
+.contact-us-sec-inner{flex-direction:column}
+.con-us-top{width:100%;flex-basis:100%}
+.con-us-top-left{max-width:100%;padding: 0;}
+.con-us-info-head ul{padding:24px 0 0}
+.con-us-top-right {max-width: 100%;}
+.serv-img img{min-width: 280px;max-width: 280px;height: 180px;}
+
+
+
+
+}
+
+
+
+@media(min-width:992px) and (max-width:1199px)
+{
+.hero-sec-inner .right-sec .hero-truck {right: -50px;bottom: -10px;}
+.con-us-top-right {max-width: 550px;}
+.con-us-top {justify-content: space-between;}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

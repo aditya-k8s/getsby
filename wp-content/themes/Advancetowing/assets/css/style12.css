@@ -1,0 +1,129 @@
+body{font-family:'Golos Text',sans-serif;font-size:14px;font-weight:400;line-height:26px;color:#4A4A4A}
+.top-bar{background-color:#D12727;color:#fff;display:flex;justify-content:space-between;min-height:40px;padding:0 0 0 15px}
+.can-flag{background-color:#fff;color:#d12727;min-width:60px;display:flex;align-items:center;justify-content:center;font-size:30px}
+.top-bar-inner ul{list-style-type:none;padding:0;margin:0;display:flex;align-items:center;height:100%}
+.top-bar-inner ul li,.top-bar-inner ul li a{font-weight:600;text-transform:uppercase;font-size:13px;color:#fff;text-decoration:none;display:flex;align-items:center}
+.top-bar-inner ul li:not(.top-bar-inner ul li:last-child){padding:0 40px 0 0}
+.top-bar-inner ul li i{font-size:20px;padding:0 6px 0 0}
+.mobile-logo{display:none}
+.navbar-expand-lg .navbar-collapse{justify-content:center}
+.navbar.bg-light{background-color:#0E376A!important;padding:0;height:80px}
+.navbar-nav .nav-link, .menu-item a{color:#fff!important;font-weight:600;text-transform:uppercase;font-size:16px;transition:all .3s ease-in-out;padding:0!important; text-decoration: none;}
+.navbar-nav .nav-link:hover, .menu-item a:hover{color:#d12727!important}
+.desktop-logo img{height:70px}
+.navbar-nav{justify-content:center;align-items:center}
+.desktop-logo{background-color:#fff;border-bottom-left-radius:50px;border-bottom-right-radius:50px;padding:15px!important;min-width:190px;display:flex;align-items:center;justify-content:center;box-shadow:0 0 10px 0 rgb(0 0 0 / 15%);position:relative;top:10px;margin:0 60px;z-index:1}
+.navbar-nav .nav-item, .menu-item{padding:0 20px}
+.grey-back{background-color:#f2f2f2}
+.caption{text-transform:uppercase;font-size:10px;font-weight:600;letter-spacing:1.5px;color:#D12727;line-height:normal;padding:0 0 5px;display:block}
+.sap-xlg-heading{font-size:67px;font-weight:800;color:#144E97;line-height:75px;padding:0 0 24px}
+.sap-lg-heading{font-size:47px;font-weight:800;color:#144E97;line-height:55px}
+.sap-md-heading{font-size:32px;font-weight:800;color:#144E97;line-height:38px}
+.sap-sm-heading{font-size:23px;font-weight:800;color:#144E97;line-height:28px}
+.text-para,.text-para p{font-size:14px;font-weight:400;line-height:26px}
+.sap-btn-dark button,.sap-btn-dark a,.sap-btn-light button,.sap-btn-light a{box-shadow:0 0!important;outline:0!important;border-width:2px;border-style:solid;padding:9px 22px;line-height:normal;display:inline-flex;align-items:center;justify-content:center;min-width:120px;min-height:45px;border-radius:50px;text-transform:uppercase;font-weight:600;font-size:13px;transition:all .3s ease-in-out}
+.sap-btn-dark button,.sap-btn-dark a{background-color:#D12727;border-color:#D12727;color:#fff}
+.sap-btn-dark button:hover,.sap-btn-dark a:hover{background-color:#b31e1e;border-color:#b31e1e;color:#fff}
+.sap-btn-light button,.sap-btn-light a{background-color:#fff;border-color:#fff;color:#144E97}
+.sap-btn-light button:hover,.sap-btn-light a:hover{background-color:#D12727;border-color:#D12727;color:#fff}
+.hero-back{min-width:450px;width:100%;max-width:450px;height:450px;overflow:hidden;border-radius:50px}
+.hero-back img{height:100%;width:100%;object-fit:cover;filter:blur(2px)}
+.hero-sec-inner{display:flex;justify-content:space-between;align-items:center;height:100%}
+.hero-sec-inner .right-sec{position:relative}
+.hero-sec-inner .right-sec .hero-truck{position:absolute;bottom:-15px;right:-80px}
+.hero-back:after{content:"";height:75%;width:350px;display:block;position:absolute;left:450px;bottom:0;background-color:#f2f2f2;z-index:1}
+.hero-sec{overflow:hidden;height:calc(100vh - 120px);padding:0}
+.hero-sec-inner .text-para{width:100%;max-width:400px;padding:0 0 24px}
+#float-circ1{position:absolute;left:0;transform:translateX(-50%);bottom:20px}
+#float-circ2{position:absolute;right:0;transform:translateX(50%);top:40px}
+.scroll-down{position:absolute;bottom:0;left:50%;transform:translateX(-50%);padding:30px 20px;font-size:20px;color:#144E97}
+section{position:relative;padding:80px 0}
+.rd-assist-inner{background-color:#F2F2F2;border-radius:20px;width:100%;flex-basis:100%;max-width:calc(50% - 20px);margin:10px;padding:20px}
+.rd-assist-head{display:flex;flex-wrap:wrap}
+.rda-icon i{color:#C4C4C4;font-size:40px}
+.rd-assist-inner .sap-sm-heading{padding:15px 0}
+.rd-assist-sec-inner{display:flex;flex-wrap:wrap}
+.rd-assist-sec-inner .left-sec{width:100%;flex-basis:100%;max-width:50%;padding:0 50px 0 0}
+.rd-assist-sec-inner .right-sec{width:100%;flex-basis:100%;max-width:50%}
+.rd-assist-sec-inner .left-sec .sap-lg-heading{padding:0 0 24px}
+.rd-assist-sec-inner .left-sec .text-para{padding:0 0 8px}
+#float-circ3{position:absolute;right:0;bottom:40px;transform:translateX(50%)}
+.tow-service-loc:before{content:"";background-image:url(http://dev1.kindlebit.com/Development/advancetowing/wp-content/uploads/2023/04/tow-service.png);position:absolute;width:100%;height:100%;top:0;left:0;z-index:0;filter:grayscale(1) blur(3px);transform:scale(1.01);background-size:cover;background-position:center;background-repeat:no-repeat}
+.tow-service-loc-inner{position:relative;z-index:2}
+.tow-service-loc{overflow:hidden;color:#fff}
+.tow-service-loc:after{content:"";position:absolute;top:0;left:0;width:100%;height:100%;background-color:rgb(14 55 106 / 70%)}
+.tow-service-loc .caption,.tow-service-loc .sap-lg-heading,.tow-service-loc .sap-sm-heading{color:#fff}
+.tsli-head{display:flex;flex-wrap:wrap}
+.tsli-head .left-sec{width:100%;flex-basis:100%;max-width:65%;border-right:1px solid #fff;margin:25px 0 8px;padding:0 40px 0 0}
+.tsli-head .right-sec{width:100%;flex-basis:100%;max-width:35%;margin:24px 0 0;padding:0 0 0 40px}
+.tsli-head .right-sec ul{list-style-type:none;padding:0;margin:0;display:flex;flex-direction:column;text-align:center}
+.tsli-head .left-sec .text-para{color:#fff}
+.tsli-head .right-sec ul li{padding:0 0 20px;display:block;width:auto;margin-left:auto;margin-right:0}
+.tsli-head .right-sec ul li:nth-child(even){margin-left:0;margin-right:auto}
+.about-us-sec-inner{display:flex}
+.about-logo{position:relative;overflow:hidden;min-width:350px;height:440px;border-radius:20px;display:flex;align-items:center;justify-content:center}
+.about-logo:after{content:"";position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(135deg,rgb(209 39 39 / 70%),rgb(20 78 151 / 70%))}
+.about-logo:before{content:"";background-image:url(http://dev1.kindlebit.com/Development/advancetowing/wp-content/uploads/2023/04/about-us-img.png);position:absolute;width:100%;height:100%;top:0;left:0;z-index:0;filter:grayscale(1) blur(3px);transform:scale(1.01);background-size:cover;background-position:center;background-repeat:no-repeat}
+.about-logo img{position:relative;z-index:1}
+.about-us-sec-inner .left-sec{padding:0 20px 0 0}
+.text-para b,.text-para p b{font-weight:600}
+#float-circ4{position:absolute;left:0;transform:translateX(-50%);bottom:40px}
+.au-counter li{background-color:#F2F2F2;border-radius:20px;margin:7px;padding:20px}
+.au-count-heading{font-weight:600;color:#C4C4C4;text-transform:uppercase}
+.au-counter{display:flex;flex-wrap:wrap;padding:0;margin:0;list-style-type:none}
+.au-right-sec-inner a{background-color:#F2F2F2;border-radius:20px;margin:7px;padding:20px;display:inline-flex;flex-direction:column;align-items:center;justify-content:center;text-decoration:none}
+.au-head{display:flex;flex-wrap:wrap;justify-content:space-between}
+.au-head .au-left-sec{width:100%;flex-basis:100%;max-width:67%;border-right:1px solid rgb(74 74 74 / 15%);padding:0 20px 0 0}
+.au-head .au-right-sec{width:100%;flex-basis:100%;max-width:33%}
+.au-right-sec-inner{display:flex;justify-content:center;align-items:center;height:100%}
+.blue-back{background-color:#0E376A;color:#fff}
+.info-ban-sec .sap-sm-heading,.info-ban-sec .sap-lg-heading{color:#fff}
+.text-red{color:#d12727}
+.ibsi-head{list-style-type:none;display:flex;justify-content:space-between;padding:0 0 30px;margin:0 0 30px;border-bottom:1px solid #fff;flex-wrap:wrap}
+.ibsi-icon i{font-size:40px;padding:0 0 15px}
+.ibsi-head li{padding:0 15px 0 0;width:100%;flex-basis:100%;max-width:20%}
+.discount-head{display:flex;align-items:center;justify-content:space-between}
+#float-circ5{position:absolute;top:40px;right:0;transform:translateX(50%)}
+.our-partners-sec-inner .sap-lg-heading{padding:0 0 24px}
+.partner-slider{padding:60px 0 0}
+.partner-img img{height:70px!important;width:120px!important;object-fit:contain;margin:0 auto;filter:grayscale(1);opacity:.4;transition:all .3s ease-in-out}
+.partner-img:hover img{filter:grayscale(0);opacity:1}
+.rd-assist-sec,.about-us-sec,.our-partners-sec,.contact-us-sec{overflow:hidden}
+.partner-slider .owl-nav{display:block!important;margin:0}
+.partner-slider .owl-nav button{background-color:transparent!important;border:0!important;outline:0;margin:0!important}
+.partner-slider .owl-nav span{font-size:0}
+.partner-slider .owl-prev span:before{content:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13.436' height='23.987' viewBox='0 0 13.436 23.987'%3E%3Cline id='Line_39' data-name='Line 39' x1='0.001' y2='14.921' transform='translate(1.414 12.022) rotate(-45)' fill='none' stroke='%23c9c9c9' stroke-linecap='square' stroke-width='2'/%3E%3Cline id='Line_40' data-name='Line 40' x2='0.001' y2='14.921' transform='translate(12.021 1.414) rotate(45)' fill='none' stroke='%23c9c9c9' stroke-linecap='square' stroke-width='2'/%3E%3C/svg%3E%0A")}
+.partner-slider .owl-next span:after{content:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13.436' height='23.987' viewBox='0 0 13.436 23.987'%3E%3Cline id='Line_39' data-name='Line 39' y1='14.922' transform='translate(1.47 22.572) rotate(-135)' fill='none' stroke='%23c9c9c9' stroke-linecap='square' stroke-width='2'/%3E%3Cline id='Line_40' data-name='Line 40' y1='14.922' transform='translate(11.966 11.966) rotate(135)' fill='none' stroke='%23c9c9c9' stroke-linecap='square' stroke-width='2'/%3E%3C/svg%3E%0A")}
+.partner-slider .owl-nav .owl-prev{left:0;position:absolute;top:60%;transform:translateY(-50%)}
+.partner-slider .owl-nav .owl-next{right:0;position:absolute;top:60%;transform:translateY(-50%)}
+.our-partners-sec-inner{border-bottom:1px solid rgb(74 74 74 / 15%);padding-bottom:60px}
+.our-partners-sec{padding-bottom:0}
+.creek-pop-up{background-color:transparent;box-shadow:0 0;border:0;padding:0;font-weight:600;color:#144E97}
+#float-circ6{position:absolute;top:0;left:0;transform:translateX(-50%)}
+#float-circ7{position:absolute;right:0;bottom:40px;transform:translateX(50%)}
+.con-us-top{display:flex;flex-wrap:wrap}
+.con-us-top-left{width:100%;flex-basis:100%;max-width:calc(100% - 660px);padding:0 20px 0 0}
+.con-us-info-head ul li a{text-decoration:none}
+.con-us-info-head ul{padding:0;list-style-type:none;margin:0;display:flex;flex-wrap:wrap}
+.con-us-info-head ul li{width:100%;flex-basis:100%;max-width:50%}
+.con-us-info-head{padding:0 0 30px}
+.con-us-info-head ul li a svg{margin:0 0 8px}
+.contact-map{padding:40px 0 0;height:340px;width:100%}
+.contact-map iframe{width:100%;height:100%;border-radius:20px;filter:grayscale(1);outline:0!important}
+footer{background-color:#0E376A;color:#fff;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:60px 0 0}
+.foot-bot{width:100%;background-color:#D12727;min-height:40px;display:flex;align-items:center;justify-content:center;margin:60px 0 0;font-size:12px;text-transform:uppercase}
+.foot-logo img{height:70px;width:auto}
+.footer-menu ul li a{color:#fff!important;font-weight:600;text-transform:uppercase;font-size:16px;transition:all .3s ease-in-out;text-decoration:none;padding:0 20px!important}
+.footer-menu ul li a:hover{color:#d12727!important}
+.footer-menu ul{list-style-type:none;padding:0;margin:0;display:flex;flex-wrap:wrap}
+.footer-menu{padding:30px 0}
+.foot-info{width:100%;max-width:480px;padding:30px 0;border-top:1px solid #fff;font-weight:600}
+.foot-payment-logo img{height:40px;width:auto}
+
+.menu-item-has-children a:after{content:"\f0dd";font-weight:900;font-family:'Font Awesome 5 Free';font-size:10px;position:relative;margin:0 0 0 6px;top:-4px}
+.menu-item-has-children .sub-menu a:after{display:none}
+.sub-menu{position:absolute;background-color:#f2f2f2;z-index:2;margin:0;list-style-type:none;padding:10px;min-width:490px;border-radius:10px;box-shadow:0 3px 10px 0 rgb(0 0 0 / 50%);border:1px solid rgb(14 55 106 / 50%)}
+.menu-item-has-children{position:relative}
+.menu-item .sub-menu a{text-transform:initial;color:#0e376a!important;width: 100%;display: block;}
+.sub-menu .menu-item{padding:0}
+.menu-item .sub-menu a:hover{color:#d12727!important}
